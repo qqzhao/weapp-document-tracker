@@ -10,6 +10,7 @@ const toMarkdown = require('to-markdown');
 let tracker;
 
 const IGNORE_TABLE = [
+    /stdl.qq.com/,
     /fanyi.qq.com/,
     /www\.tencent\.com/,
     /kf\.qq\.com/,
