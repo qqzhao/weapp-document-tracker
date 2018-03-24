@@ -22,7 +22,8 @@ const IGNORE_TABLE = [
     /\.zip$/,
 ];
 
-const MAIN_PAGE = 'https://mp.weixin.qq.com/debug/wxadoc/dev/';
+// const MAIN_PAGE = 'https://mp.weixin.qq.com/debug/wxadoc/dev/';
+const MAIN_PAGE = 'https://fanyi.qq.com';
 
 
 const Git = {
@@ -88,7 +89,7 @@ var c = new Crawler({
     callback : function (error, res, done) {
         tracker.resolved++;
         if(error){
-            console.log(error);
+            console.log('error: ', error);
         }else{
             let $ = res.$;
             let uri = res.options.uri;
@@ -166,6 +167,8 @@ var c = new Crawler({
             });
         }
         done();
+        console.log('tracker.resolved = ', tracker.resolved);
+        console.log('tracker.count = ', tracker.count);
         if (tracker.resolved === tracker.count) {
             console.log('ALL DONE');
             tracker.complete();

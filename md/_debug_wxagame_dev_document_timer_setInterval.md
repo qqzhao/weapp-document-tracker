@@ -8,13 +8,17 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小游戏开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
 
 </div>
 
@@ -39,6 +43,7 @@
 *   [教程](../../index.html)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
+*   [腾讯云支持](../../qcloud/qcloud.html)
 
 </div>
 
@@ -198,6 +203,7 @@
     *   [登录](../open-api/login/wx.checkSession.html)
         *   [wx.checkSession](../open-api/login/wx.checkSession.html)
         *   [wx.login](../open-api/login/wx.login.html)
+        *   [code2accessToken](../open-api/login/code2accessToken.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
         *   [wx.authorize](../open-api/authorize/wx.authorize.html)
     *   [用户信息](../open-api/user-info/wx.getUserInfo.html)
@@ -225,7 +231,7 @@
         *   [wx.onMessage](../open-api/context/wx.onMessage.html)
         *   [OpenDataContext](../open-api/context/OpenDataContext.html)
         *   [OpenDataContext.postMessage](../open-api/context/OpenDataContext.postMessage.html)
-    *   [access token](../open-api/access-token/getAccessToken.html)
+    *   [接口调用凭证](../open-api/access-token/getAccessToken.html)
         *   [getAccessToken](../open-api/access-token/getAccessToken.html)
 *   [转发](../share/wx.getShareInfo.html)
     *   [wx.getShareInfo](../share/wx.getShareInfo.html)
@@ -333,25 +339,45 @@
         *   [ImageFile](../media/image/ImageFile.html)
     *   [视频](../media/video/wx.createVideo.html)
         *   [wx.createVideo](../media/video/wx.createVideo.html)
+        *   [wx.createVideo](../media/video/wx.createVideo.html)
+        *   [Video](../media/video/Video.html)
         *   [Video](../media/video/Video.html)
         *   [Video.exitFullScreen](../media/video/Video.exitFullScreen.html)
+        *   [Video.exitFullScreen](../media/video/Video.exitFullScreen.html)
+        *   [Video.offPause](../media/video/Video.offPause.html)
+        *   [Video.onEnded](../media/video/Video.onEnded.html)
+        *   [Video.offEnded](../media/video/Video.offEnded.html)
+        *   [Video.onTimeUpdate](../media/video/Video.onTimeUpdate.html)
+        *   [Video.offTimeUpdate](../media/video/Video.offTimeUpdate.html)
         *   [Video.onError](../media/video/Video.onError.html)
+        *   [Video.offError](../media/video/Video.offError.html)
+        *   [Video.onPlay](../media/video/Video.onPlay.html)
+        *   [Video.offError](../media/video/Video.offError.html)
+        *   [Video.onError](../media/video/Video.onError.html)
+        *   [Video.offTimeUpdate](../media/video/Video.offTimeUpdate.html)
+        *   [Video.onTimeUpdate](../media/video/Video.onTimeUpdate.html)
+        *   [Video.onPause](../media/video/Video.onPause.html)
+        *   [Video.offWaiting](../media/video/Video.offWaiting.html)
+        *   [Video.onWaiting](../media/video/Video.onWaiting.html)
+        *   [Video.offPlay](../media/video/Video.offPlay.html)
+        *   [Video.offWaiting](../media/video/Video.offWaiting.html)
+        *   [Video.onPlay](../media/video/Video.onPlay.html)
         *   [Video.offPlay](../media/video/Video.offPlay.html)
         *   [Video.onPause](../media/video/Video.onPause.html)
         *   [Video.offPause](../media/video/Video.offPause.html)
         *   [Video.onEnded](../media/video/Video.onEnded.html)
         *   [Video.offEnded](../media/video/Video.offEnded.html)
-        *   [Video.onTimeUpdate](../media/video/Video.onTimeUpdate.html)
         *   [Video.onWaiting](../media/video/Video.onWaiting.html)
-        *   [Video.onPlay](../media/video/Video.onPlay.html)
-        *   [Video.offError](../media/video/Video.offError.html)
-        *   [Video.offWaiting](../media/video/Video.offWaiting.html)
-        *   [Video.offTimeUpdate](../media/video/Video.offTimeUpdate.html)
+        *   [Video.pause](../media/video/Video.pause.html)
+        *   [Video.play](../media/video/Video.play.html)
         *   [Video.pause](../media/video/Video.pause.html)
         *   [Video.play](../media/video/Video.play.html)
         *   [Video.requestFullScreen](../media/video/Video.requestFullScreen.html)
+        *   [Video.requestFullScreen](../media/video/Video.requestFullScreen.html)
+        *   [Video.seek](../media/video/Video.seek.html)
         *   [Video.stop](../media/video/Video.stop.html)
         *   [Video.seek](../media/video/Video.seek.html)
+        *   [Video.stop](../media/video/Video.stop.html)
 *   [性能](../performance/wx.getPerformance.html)
     *   [wx.getPerformance](../performance/wx.getPerformance.html)
     *   [wx.triggerGC](../performance/wx.triggerGC.html)
@@ -362,6 +388,12 @@
     *   [clearInterval](clearInterval.html)
     *   [setTimeout](setTimeout.html)
     *   [setInterval](setInterval.html)
+*   [虚拟支付](../midas-payment/wx.requestMidasPayment.html)
+    *   [wx.requestMidasPayment](../midas-payment/wx.requestMidasPayment.html)
+    *   [midasCancelPay](../midas-payment/midasCancelPay.html)
+    *   [midasGetBalance](../midas-payment/midasGetBalance.html)
+    *   [midasPay](../midas-payment/midasPay.html)
+    *   [midasPresent](../midas-payment/midasPresent.html)
 
 </nav>
 
@@ -444,6 +476,6 @@ param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回�
 
 </div>
 
-[](setTimeout.html)[](../../devtools/devtools.html)</div>
+[](setTimeout.html)[](../midas-payment/wx.requestMidasPayment.html)</div>
 
 </div>
