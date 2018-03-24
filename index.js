@@ -25,7 +25,7 @@ const IGNORE_TABLE = [
 ];
 
 // const MAIN_PAGE = 'https://mp.weixin.qq.com/debug/wxadoc/dev/';
-const MAIN_PAGE = 'https://fanyi.qq.com';
+const MAIN_PAGE = 'http://fanyi.qq.com';
 
 
 const Git = {
