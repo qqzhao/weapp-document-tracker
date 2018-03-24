@@ -54,6 +54,7 @@ class Tracker {
         this.resolveMap = {};
         this.count = 0;
         this.resolved = 0;
+        this.errorCount = 0;
     }
 
     queue (uri) {
@@ -67,7 +68,6 @@ class Tracker {
 
     complete () {
         process.chdir(__dirname);
-        
         if (!Git.diff()) {
             console.log('NO UPDATES');
             return;
@@ -88,16 +88,12 @@ var c = new Crawler({
     maxConnections : 10,
     // This will be called for each crawled page
     callback : function (error, res, done) {
-        
-        if (res.statusCode === 200) {
-            tracker.resolved++;
-        } else {
-            console.log('res.statusCode: ', res.statusCode);
-        }
-        
-        if(error){
-            console.log('error: ', error);
+        // console.log('res.statusCode: ', res.statusCode);
+        if(error || res.statusCode != 200){
+            console.log('res.statusCode: ', res.statusCode, error);
+            tracker.errorCount ++;
         }else{
+            tracker.resolved++;
             let $ = res.$;
             let uri = res.options.uri;
             if (/\/$/.test(uri)) {
@@ -169,14 +165,14 @@ var c = new Crawler({
                     return;
                 }
 
-                if (/^\/debug/.test(linkObj.path))
+                if (/^\/debug/.test(linkObj.path)) {
                     tracker.queue(link);
+                }
             });
         }
         done();
-        console.log('tracker.resolved = ', tracker.resolved);
-        console.log('tracker.count = ', tracker.count);
-        if (tracker.resolved === tracker.count) {
+        console.log(`tracker.resolved = ${tracker.resolved}, tracker.count = ${tracker.count},tracker.errorCount = ${tracker.errorCount}`);
+        if (tracker.resolved + tracker.errorCount=== tracker.count) {
             console.log('ALL DONE');
             tracker.complete();
         }
