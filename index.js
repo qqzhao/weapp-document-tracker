@@ -89,6 +89,9 @@ var c = new Crawler({
     maxConnections : 10,
     // This will be called for each crawled page
     callback : function (error, res, done) {
+        console.log('res: ', res);
+        console.log('done: ', done);
+        console.log('error: ', error);
         tracker.resolved++;
         if(error){
             console.log('error: ', error);
