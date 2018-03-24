@@ -10,8 +10,6 @@ const toMarkdown = require('to-markdown');
 let tracker;
 
 const IGNORE_TABLE = [
-    /stdl.qq.com/,
-    /fanyi.qq.com/,
     /www\.tencent\.com/,
     /kf\.qq\.com/,
     /github\.com/,
@@ -21,11 +19,12 @@ const IGNORE_TABLE = [
     /mp\.weixin\.qq\.com\/cgi-bin\/opshowpage/,
     /mp\.weixin\.qq\.com\/wxopen\/wawiki/,
     /developers\.weixin\.qq\.com\/home/,
-    /\.zip$/,
+    /\.zip?/,
+    /debug\/wxagame\/dev\/document\/media\/video\/Video.destroy.md/
 ];
 
-// const MAIN_PAGE = 'https://mp.weixin.qq.com/debug/wxadoc/dev/';
-const MAIN_PAGE = 'http://fanyi.qq.com';
+const MAIN_PAGE = 'https://mp.weixin.qq.com/debug/wxadoc/dev/';
+// const MAIN_PAGE = 'http://www.baidu.com/';
 
 
 const Git = {
@@ -78,7 +77,7 @@ class Tracker {
         let date = new Date();
 
         Git.add();
-        Git.commit(`[${date.getFullYear()}-${(date.getMonth() + 1)}-${date.getDate()}] UPDATE FOUNDS - @Gcaufy`);
+        Git.commit(`[${date.getFullYear()}-${(date.getMonth() + 1)}-${date.getDate()}] UPDATE FOUNDS - @qqzhao`);
         Git.push();
     }
 }
@@ -89,10 +88,13 @@ var c = new Crawler({
     maxConnections : 10,
     // This will be called for each crawled page
     callback : function (error, res, done) {
-        console.log('res: ', res);
-        console.log('done: ', done);
-        console.log('error: ', error);
-        tracker.resolved++;
+        
+        if (res.statusCode === 200) {
+            tracker.resolved++;
+        } else {
+            console.log('res.statusCode: ', res.statusCode);
+        }
+        
         if(error){
             console.log('error: ', error);
         }else{
