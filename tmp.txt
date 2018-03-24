@@ -1,8 +1,8 @@
 0/0: https://fanyi.qq.com
-2018-03-24T07:11:01.722Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com (3 retries left)
-2018-03-24T07:11:11.770Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com (2 retries left)
-2018-03-24T07:11:21.811Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com (1 retries left)
-2018-03-24T07:11:31.860Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com
+2018-03-24T07:11:47.252Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com (3 retries left)
+2018-03-24T07:11:57.293Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com (2 retries left)
+2018-03-24T07:12:07.388Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com (1 retries left)
+2018-03-24T07:12:17.434Z - error: CRAWLER Error Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com" when fetching https://fanyi.qq.com
 error:  { Error: Hostname/IP doesn't match certificate's altnames: "Host: fanyi.qq.com. is not in the cert's altnames: DNS:*.html5.qq.com, DNS:*.imtt.qq.com, DNS:*.mb.qq.com, DNS:*.3g.qq.com"
     at Object.checkServerIdentity (tls.js:221:17)
     at TLSSocket.<anonymous> (_tls_wrap.js:1104:29)
